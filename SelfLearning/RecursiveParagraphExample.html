@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <title>Apply JavaScript example</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <button>Click me</button>
+  <script>
+ var buttons = document.querySelectorAll('button');
+ function createPara(){
+     var para = document.createElement('p');
+     para.textContent = 'you clicked the button!';
+     document.body.appendChild(para);
+ }
+for (var i=0; i< buttons.length; i++)
+{
+buttons[i].addEventListener('click', createPara);
+ } 
+  </script>
+</body>
+</html>
+
